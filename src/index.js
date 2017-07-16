@@ -1,3 +1,23 @@
+/**
+ * Particles emmiters for each parameter:
+ * - Delay
+ * - Eq
+ * - Distortion
+ * .
+ * Emitted particles will leave trails.
+ * Emitted Particles will be attracted to the most important value.
+ * Emitted particles death color will be the most important value.
+ * .
+ * X axis will be mapped to Z axis. (more right, more far)
+ * .
+ * More X/Z, less important, less effect.
+ * More Y, change other effect parameter.
+ * .
+ * Brightness/Contrast
+ * Hue/Saturation
+ * Effected by: Multi-band spectrum peek analyser.
+ */
+
 var AudioContext = (window.AudioContext || window.webkitAudioContext);
 var audioCtx = new AudioContext();
 var analyser = audioCtx.createAnalyser();
