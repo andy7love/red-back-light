@@ -157,7 +157,7 @@ li {
 /*                      LAYOUT                                     */
 /*-----------------------------------------------------------------*/
 .wrapper {
-    width: 1200px;
+    width: 1220px;
     margin: 0 auto;
 }
 
@@ -1265,7 +1265,7 @@ ul.info li:first-child {
 /*-----------------------------------------------------------------*/
 /*                      RESPONSIVE                                  */
 /*-----------------------------------------------------------------*/
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 1200px) {
 	.music .music-content .bandcamp {
 		display: none;
 	}
@@ -1274,6 +1274,16 @@ ul.info li:first-child {
     .works .item-outer .mix {
         width: 50%;
     }
+}
+
+@media only screen and (max-width: 1220px) {
+    .wrapper {
+        width: 100%;
+	}
+
+	.main-content {
+		width: calc(100vw - 275px);
+	}
 }
 
 @media only screen and (max-width: 991px) {
