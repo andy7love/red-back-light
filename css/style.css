@@ -22,11 +22,16 @@
 /*                      GLOBAL STYLES                              */
 /*-----------------------------------------------------------------*/
 body {
-    color: #1a1a1a;
-    background-color: #0C0C0C;
-	font-family: "Roboto", sans-serif;
-	font-weight: 400;
+	color: #1a1a1a;
+    background-color: #000;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
     overflow-x: hidden;
+	background-image: url('../images/overall-bg.jpg');
+	background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position-x: center;
+    background-position-y: bottom;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -162,7 +167,7 @@ li {
     height: 200px;
     background-position-y: bottom;
     background-repeat: no-repeat;
-    background-position-x: center;
+	background-position-x: center;
 }
 
 /*-----------------------------------------------------------------*/
@@ -171,8 +176,9 @@ li {
 .red {
 	color: #e20000;
 }
+
 .header {
-    background: #0C0C0C;
+    background: rgba(12, 12, 12, 0.7);
     padding: 95px 46px 46px 46px;
     position: fixed;
     height: 100%;
@@ -428,7 +434,7 @@ li {
 /*                      MAIN CONTENT                               */
 /*-----------------------------------------------------------------*/
 .main-content {
-    background: #FFF;
+    background: #EEE;
     width: 960px;
 }
 
@@ -850,7 +856,8 @@ ul.info li:first-child {
     margin-bottom: 2px;
     overflow: hidden;
     height: 193px;
-    position: relative;
+	position: relative;
+	background-color: #ccc;
 }
 
 .works .item-outer .item .title {

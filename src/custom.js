@@ -69,6 +69,7 @@ $(function () {
 		type: 'image'
 	});
 
+	/*
 	$('.work-video').magnificPopup({
 		type: 'iframe',
 		iframe: {
@@ -97,4 +98,5 @@ $(function () {
 			srcAction: 'iframe_src',
 		}
 	});
+	*/
 });
