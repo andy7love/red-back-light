@@ -31,7 +31,8 @@ body {
 	background-repeat: no-repeat;
     background-attachment: fixed;
     background-position-x: center;
-    background-position-y: bottom;
+	background-position-y: bottom;
+	background-size: cover;
 }
 
 h1,h2,h3,h4,h5,h6 {
@@ -165,9 +166,19 @@ li {
     background-image: url('../images/rbl-live-banner-low.jpg');
     background-attachment: fixed;
     height: 200px;
+    background-position-y: top;
+    background-repeat: no-repeat;
+    background-position-x: 54%;
+}
+
+.banner2 {
+    background-image: url('../images/akai-rbl2.jpg');
+    height: 285px;
     background-position-y: bottom;
     background-repeat: no-repeat;
-	background-position-x: center;
+    background-position-x: 70%;
+    margin-bottom: -1px;
+    background-size: cover;
 }
 
 /*-----------------------------------------------------------------*/
@@ -640,7 +651,6 @@ li {
 ul.info {
     margin-bottom: 40px;
     padding: 0;
-    list-style: none;
 }
 
 ul.info li {
@@ -650,14 +660,6 @@ ul.info li {
     font-weight: 300;
     color: #0C0C0C;
     font-size: 14px;
-}
-
-ul.info li:before {
-    content: '\f177';
-    font-family: 'FontAwesome';
-    font-size: 14px;
-    color: #0C0C0C;
-    padding-right: 15px;
 }
 
 ul.info li:first-child {
@@ -1161,7 +1163,7 @@ ul.info li:first-child {
 
 .btn-default:after {
     content: '\f178';
-    font-family: 'FontAwesome';
+    font-family: 'Font Awesome 5 Brands';
     font-size: 12px;
     top: 0;
     right: -29px;
@@ -1265,8 +1267,13 @@ ul.info li:first-child {
 /*-----------------------------------------------------------------*/
 /*                      RESPONSIVE                                  */
 /*-----------------------------------------------------------------*/
-@media only screen and (max-width: 1200px) {
-	.music .music-content .bandcamp {
+@media only screen and (max-height: 550px) {
+	body {
+		background-position-y: center;
+	}
+}
+@media only screen and (max-width: 1030px) {
+	.music .music-content .spotify {
 		display: none;
 	}
 }
@@ -1326,6 +1333,18 @@ ul.info li:first-child {
 }
 
 @media only screen and (max-width: 767px) {
+	body {
+		background-attachment: initial;
+		background-position-y: top;
+		background-repeat: repeat;
+		background-size: contain;
+	}
+
+	.banner {
+		background-attachment: initial;
+		background-position-y: center;
+	}
+
     .welcome {
         padding: 60px !important;
     }

@@ -45,22 +45,22 @@ $(function () {
 	$(".resume-download").tooltip();
 
     /*=========================================================================
-            Backstretch Background Slider
-    =========================================================================*/
-	$("#welcome").backstretch([
-		"images/no-more-memories-cover.jpg",
-		"images/no-more-memories-cover.jpg",
-	], { duration: 5000, fade: 400 });
+			Backstretch Background Slider
+			Welcome & Header Height
+	=========================================================================*/
+	var fixImage = function () {
+		if ($(window).height() < 768) {
+			$("#welcome").css({ 'height': ($(window).width()) + 'px' });
+		} else {
+			$("#welcome").css({ 'height': ($(window).height()) + 'px' });
+		}
+		$(".header").css({ 'height': ($(window).height()) + 'px' });
 
-    /*=========================================================================
-            Welcome & Header Height
-    =========================================================================*/
-	if ($(window).height() < 768) {
-		$("#welcome").css({ 'height': ($(window).width()) + 'px' });
-	} else {
-		$("#welcome").css({ 'height': ($(window).height()) + 'px' });
+		$("#welcome").backstretch("images/no-more-memories-cover.jpg");
 	}
-	$(".header").css({ 'height': ($(window).height()) + 'px' });
+
+	$(window).resize(fixImage);
+	fixImage();
 
     /*=========================================================================
             Magnific Popup Functions
